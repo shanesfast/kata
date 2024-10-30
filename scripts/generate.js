@@ -4,7 +4,7 @@ const config = require("../ligma.config");
 const dsa = require("./dsa");
 
 const src_path = path.join(__dirname, "..", "src");
-let day = 1;
+let day = 9;
 
 try {
     day = +fs.readdirSync(src_path).
