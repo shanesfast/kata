@@ -14,12 +14,12 @@
         "typescript": "^4.7.4"
     },
     "scripts": {
-        "test": "jest DFSOnBST LRU LinearSearchList BinarySearchList TwoCrystalBalls BubbleSort SinglyLinkedList DoublyLinkedList Queue Stack ArrayList MazeSolver QuickSort BTPreOrder BTInOrder BTPostOrder BTBFS CompareBinaryTrees DFSOnBST DFSGraphList Trie BFSGraphMatrix Map MinHeap DijkstraList",
+        "test": "jest LRU BTPreOrder BTInOrder BTPostOrder BTBFS DFSOnBST",
         "clear": "node ./scripts/clear.js",
         "prettier": "prettier --write ./src",
         "generate": "node ./scripts/generate.js",
         "fixDays": "node ./scripts/fixDayInConfigs.js",
-        "day": "echo src\\day9"
+        "day": "echo src\\day14"
     },
     "devDependencies": {
         "@swc-node/register": "^1.6.7"
