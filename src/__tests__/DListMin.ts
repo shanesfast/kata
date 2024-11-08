@@ -1,4 +1,4 @@
-import dijkstra_list from "@code/DijkstraWithMinHeap";
+import dijkstra_list from "@code/DListMin";
 import { list1 } from "./graph";
 
 test("dijkstra via adj list", function () {
