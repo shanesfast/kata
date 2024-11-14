@@ -4,9 +4,9 @@ module.exports = {
         // "MazeSolver",
         // "BinarySearchList",
         // "TwoCrystalBalls",
-        "BubbleSort",
-        "QuickSort",
-        "DijkstraList",
+        // "BubbleSort",
+        // "QuickSort",
+        // "DijkstraList",
         // "BTBFS",
         // "DFSOnBST",
         // "BTPreOrder",
@@ -23,7 +23,7 @@ module.exports = {
         // "Stack",
         // "Map",
         // "MinHeap",
-        "LRU",
+        // "LRU",
     ],
 }
 

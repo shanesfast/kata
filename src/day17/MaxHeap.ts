@@ -1,17 +1,21 @@
-export default class MinHeap {
+export default class MaxHeap {
     get length(): number { return this.data.length; }
-    public data: number[];
+    public data: number[][];
 
     constructor() {
         this.data = [];
     }
 
-    insert(value: number): void {
+    top(): number[] {
+        return this.data[0];
+    }
+
+    insert(value: number[]): void {
         this.data.push(value);
         this.heapUp(this.length - 1);
     }
 
-    delete(): number | undefined {
+    delete(): number[] | undefined {
         const node = this.data[0];
 
         // move last element to the top of the heap
@@ -30,7 +34,7 @@ export default class MinHeap {
         const pVal = this.data[pIdx];
         const val = this.data[idx];
 
-        if (pVal > val) {
+        if (pVal[0] < val[0]) {
             this.data[pIdx] = val;
             this.data[idx] = pVal;
             this.heapUp(pIdx);
@@ -46,13 +50,13 @@ export default class MinHeap {
         const rVal = this.data[r];
         const val = this.data[idx];
 
-        if (rVal > lVal && val > lVal) {
+        if (rVal[0] < lVal[0] && val[0] < lVal[0]) {
             this.data[l] = val;
             this.data[idx] = lVal;
             this.heapDown(l);
         }
 
-        if (lVal > rVal && val > rVal) {
+        if (lVal[0] < rVal[0] && val[0] < rVal[0]) {
             this.data[r] = val;
             this.data[idx] = rVal;
             this.heapDown(r);
