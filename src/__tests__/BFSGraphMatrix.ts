@@ -10,7 +10,7 @@ test("bfs - graph matrix", function () {
         6,
     ]);
 
-    expect(bfs(matrix2, 6, 0)).toEqual(null);
+    expect(bfs(matrix2, 6, 0)).toEqual([]);
 });
 
 

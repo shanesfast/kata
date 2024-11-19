@@ -256,21 +256,21 @@ module.exports = {
     BTPreOrder: {
         type: "fn",
         fn: "pre_order_search",
-        args: "head: BinaryNode<number>",
+        args: "head: BinaryNode<number> | null, path: number[]",
         return: "number[]",
     },
 
     BTInOrder: {
         type: "fn",
         fn: "in_order_search",
-        args: "head: BinaryNode<number>",
+        args: "head: BinaryNode<number> | null, path: number[]",
         return: "number[]",
     },
 
     BTPostOrder: {
         type: "fn",
         fn: "post_order_search",
-        args: "head: BinaryNode<number>",
+        args: "head: BinaryNode<number> | null, path: number[]",
         return: "number[]",
     },
 
@@ -284,7 +284,7 @@ module.exports = {
     CompareBinaryTrees: {
         type: "fn",
         fn: "compare",
-        args: "a: BinaryNode<number> | null, b: BinaryNode<number> | null",
+        args: "a: BinaryNode<number> | null | undefined, b: BinaryNode<number> | null | undefined",
         return: "boolean",
     },
 
@@ -299,21 +299,21 @@ module.exports = {
         type: "fn",
         fn: "dfs",
         args: "graph: WeightedAdjacencyList, source: number, needle: number",
-        return: "number[] | null",
+        return: "number[]",
     },
 
     BFSGraphList: {
         type: "fn",
         fn: "bfs",
         args: "graph: WeightedAdjacencyList, source: number, needle: number",
-        return: "number[] | null",
+        return: "number[]",
     },
 
     BFSGraphMatrix: {
         type: "fn",
         fn: "bfs",
         args: "graph: WeightedAdjacencyMatrix, source: number, needle: number",
-        return: "number[] | null",
+        return: "number[]",
     },
 };
 

@@ -10,7 +10,7 @@ test("bfs - graph", function () {
         6,
     ]);
 
-    expect(bfs(list2, 6, 0)).toEqual(null);
+    expect(bfs(list2, 6, 0)).toEqual([]);
 });
 
 

@@ -10,6 +10,6 @@ test("dfs - graph", function () {
         6,
     ]);
 
-    expect(dfs(list2, 6, 0)).toEqual(null);
+    expect(dfs(list2, 6, 0)).toEqual([]);
 });
 
