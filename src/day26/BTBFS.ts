@@ -1,10 +1,26 @@
+export default function bfs(head: BinaryNode<number>, needle: number): boolean {
+    const q = new Queue<BinaryNode<number>>();
+    q.enqueue(head);
+
+    while (q.length) {
+        const curr = q.deque() as BinaryNode<number>;
+
+        if (curr.value === needle) { return true; }
+
+        if (curr.left) { q.enqueue(curr.left); }
+        if (curr.right) { q.enqueue(curr.right); }
+    }
+
+    return false;
+}
+
 type Node<T> = {
     value: T,
     next?: Node<T>,
     prev?: Node<T>
 }
 
-export default class Stack<T> {
+class Queue<T> {
     public length: number;
     public head?: Node<T>;
     public tail?: Node<T>;
@@ -14,7 +30,7 @@ export default class Stack<T> {
         this.head = this.tail = undefined;
     }
 
-    push(item: T): void {
+    enqueue(item: T): void {
         ++this.length;
         const node = { value: item } as Node<T>;
 
@@ -28,25 +44,21 @@ export default class Stack<T> {
         this.tail = node;
     }
 
-    pop(): T | undefined {
+    deque(): T | undefined {
         this.length = Math.max(0, this.length - 1);
-        const node = this.tail;
 
-        this.tail = node?.prev;
-
-        if (node) {
-            node.prev = undefined;
-            node.next = undefined;
-        }
+        const node = this.head;
+        this.head = node?.next;
+        if (this.head) { this.head.prev = undefined; }
 
         if (!this.length) {
-            this.head = undefined;
+            this.tail = undefined;
         }
 
         return node?.value;
     }
 
     peek(): T | undefined {
-        return this.tail?.value;
+        return this.head?.value;
     }
 }

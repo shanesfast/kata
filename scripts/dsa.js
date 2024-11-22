@@ -50,7 +50,7 @@ module.exports = {
         properties: [{
             name: "length",
             type: "number",
-            scope: "private",
+            scope: "public",
         }]
     },
     MinHeap: {
@@ -256,21 +256,21 @@ module.exports = {
     BTPreOrder: {
         type: "fn",
         fn: "pre_order_search",
-        args: "head: BinaryNode<number> | null, path: number[]",
+        args: "head: BinaryNode<number> | null, path: number[] = []",
         return: "number[]",
     },
 
     BTInOrder: {
         type: "fn",
         fn: "in_order_search",
-        args: "head: BinaryNode<number> | null, path: number[]",
+        args: "head: BinaryNode<number> | null, path: number[] = []",
         return: "number[]",
     },
 
     BTPostOrder: {
         type: "fn",
         fn: "post_order_search",
-        args: "head: BinaryNode<number> | null, path: number[]",
+        args: "head: BinaryNode<number> | null, path: number[] = []",
         return: "number[]",
     },
 
@@ -291,7 +291,7 @@ module.exports = {
     DFSOnBST: {
         type: "fn",
         fn: "dfs",
-        args: "head: BinaryNode<number>, needle: number",
+        args: "head: BinaryNode<number> | null | undefined, needle: number",
         return: "boolean",
     },
 
