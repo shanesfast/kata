@@ -30,6 +30,10 @@ const list_interface = {
         name: "removeAt",
         args: "idx: number",
         return: "T | undefined",
+    }, {
+        name: "print",
+        args: "",
+        return: "void",
     }],
     ...length_property,
 };
