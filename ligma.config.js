@@ -7,6 +7,7 @@ module.exports = {
         // "BubbleSort",
         // "QuickSort",
         // "DijkstraList",
+        "InsertionSort",
         // "BTBFS",
         // "DFSOnBST",
         // "BTPreOrder",

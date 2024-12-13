@@ -7,7 +7,7 @@
 - TwoCrystalBalls + BinarySearchList
 - LinearSearchList + MazeSolver
 - QuickSort + BubbleSort
-- DijkstraList
+- DijkstraList + InsertionSort
 - BTBFS + DFSOnBST
 - BTPreOrder + BTInOrder + BTPostOrder
 - CompareBinaryTrees + BFSGraphMatrix
@@ -22,4 +22,4 @@
 ## Struggled with
     This section will list the Kata that you struggled with as additional exercises to do along with your daily exercises
 
-- No struggles at the moment c:
+- InsertionSort
