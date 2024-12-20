@@ -204,7 +204,7 @@ module.exports = {
     MergeSort: {
         type: "fn",
         fn: "merge_sort",
-        args: "arr: number[]",
+        args: "arr: number[], left: number = 0, right: number = arr.length - 1",
         "return": "void",
     },
 

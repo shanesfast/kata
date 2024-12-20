@@ -11,7 +11,7 @@
 - BTBFS + DFSOnBST
 - BTPreOrder + BTInOrder + BTPostOrder
 - CompareBinaryTrees + BFSGraphMatrix
-- DFSGraphList
+- DFSGraphList + MergeSort
 
 ### Data Structures
 - Stack + Queue
@@ -22,4 +22,4 @@
 ## Struggled with
     This section will list the Kata that you struggled with as additional exercises to do along with your daily exercises
 
-- InsertionSort
+- MergeSort
