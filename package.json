@@ -14,12 +14,12 @@
         "typescript": "^4.7.4"
     },
     "scripts": {
-        "test": "jest BubbleSort QuickSort DijkstraList InsertionSort MergeSort DoublyLinkedList",
+        "test": "jest InsertionSort CompareBinaryTrees BFSGraphMatrix DFSGraphList MergeSort MinHeap",
         "clear": "node ./scripts/clear.js",
         "prettier": "prettier --write ./src",
         "generate": "node ./scripts/generate.js",
         "fixDays": "node ./scripts/fixDayInConfigs.js",
-        "day": "echo src\\day43"
+        "day": "echo src\\day45"
     },
     "devDependencies": {
         "@swc-node/register": "^1.6.7"
